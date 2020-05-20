@@ -90,7 +90,7 @@ async def on_message(message):
 			embed = discord.Embed()
 			embed.add_field(name="Games List", value="Here are the list of games you can play", inline=False)
 			embed.add_field(name="Trivia", value="$trivia for a trivia game", inline=False)
-			await message.channel.send(embed = embed, content = "Le pussy de garcons")
+			await message.channel.send(embed = embed, content = "Empty")
 		except:
 			print("Somthing bad happened")
 	elif a == "$wake":
