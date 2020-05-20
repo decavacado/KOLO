@@ -17,7 +17,7 @@ def async_call_later(seconds, callback):
     asyncio.ensure_future(schedule())
 
 #making connection to local mongodb database
-mongo = pymongo.MongoClient("mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false")
+mongo = pymongo.MongoClient(DBHERE)
 trivia =  mongo.Trivia
 trivia_things = trivia.trivias
 trivia_list = []
@@ -175,4 +175,4 @@ async def on_message(message):
 		await message.channel.send(embed = embed)
 
 
-client.run("Njk5ODQwNzE1MjM2MzExMDgx.XpaQDg.oHS-rnC_VMq7zomuyRxCwbdZRQY")
+client.run("KEY HERE")
